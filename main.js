@@ -1,5 +1,4 @@
 
-
 const smoothScroll = () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -80,8 +79,7 @@ const setupSocialIcons = () => {
     icon.addEventListener('click', e => {
       if (icon.getAttribute('href')==='#'){
       e.preventDefault();
-      alert('Redirecting to our social media page...');
-      }
+      alert('Redirecting to our social media page...');}
     });
   });
 };
