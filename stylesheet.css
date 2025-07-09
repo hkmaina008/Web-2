@@ -14,6 +14,10 @@ background: #081b29;
 
 }
 
+html, body{
+	overflow-x: hidden;
+}
+
 .header {
     position: sticky;
 	top: 0;
