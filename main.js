@@ -1,5 +1,5 @@
 
-// Smooth scroll to anchors
+
 const smoothScroll = () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -12,7 +12,7 @@ const smoothScroll = () => {
   });
 };
 
-// Modal popup for Learn More buttons
+
 const createModal = () => {
   const modal = document.createElement('div');
   modal.id = 'modal';
@@ -63,7 +63,7 @@ const setupLearnMoreButtons = () => {
   });
 };
 
-// Contact form submission
+/l
 const setupContactForm = () => {
   const form = document.querySelector('.contact-form form');
   form.addEventListener('submit', e => {
@@ -73,13 +73,15 @@ const setupContactForm = () => {
   });
 };
 
-// Social icon interaction
+
 const setupSocialIcons = () => {
   const icons = document.querySelectorAll('.home-sci a, .contact-icons a');
   icons.forEach(icon => {
     icon.addEventListener('click', e => {
+      if (icon.getAttribute('href')==='#'){
       e.preventDefault();
       alert('Redirecting to our social media page...');
+      }
     });
   });
 };
